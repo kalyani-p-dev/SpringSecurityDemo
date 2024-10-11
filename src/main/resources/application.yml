@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: SpringSecurityDemo
+  datasource:
+    url: jdbc:mysql://localhost:3306/userdb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    hibernate.ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+      
+ 
